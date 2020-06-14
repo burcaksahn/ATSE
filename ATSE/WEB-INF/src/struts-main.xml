@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+    <package name="default" extends="struts-default,tiles-default" namespace="/">
+		<default-interceptor-ref name="defaultStack"></default-interceptor-ref>
+		<global-results>
+		   <result name="home" type="chain">home</result>
+		</global-results>
+		
+		
+		<action name="" class="atse.actions.HomeAction" method="displayHome">
+		   <interceptor-ref name="defaultStack" />
+		   <result type="tiles">home</result>
+		</action>
+		
+		<action name="home" class="atse.actions.HomeAction" method="displayHome">
+		   <interceptor-ref name="defaultStack" />
+		   <result name="success" type="tiles">home</result>
+		</action>
+		<action name="displayclustermanagement" class="atse.actions.HomeAction" method="displayClusterManagement">
+		   <interceptor-ref name="defaultStack" />
+		   <result name="success" type="tiles">clustermanagement</result>
+		</action>
+		<action name="uploadfile" class="atse.actions.HomeAction" method="uploadFile">
+		   <interceptor-ref name="defaultStack" />
+		   <result name="success" type="tiles">clustermanagement</result>
+		</action>
+		<action name="displayclustersearch" class="atse.actions.HomeAction" method="displayClusterSearch">
+		   <interceptor-ref name="defaultStack" />
+		   <result name="success" type="tiles">clustersearch</result>
+		</action>
+		<action name="getclusterlistjson" class="atse.actions.HomeAction" method="getClusterListJson">
+		   <result name="success" type="tiles">clustersearch</result>
+		</action>
+		<action name="searchclusterlistjson" class="atse.actions.HomeAction" method="searchClusterListJson">
+		   <result name="success" type="tiles">clustersearch</result>
+		</action>
+        
+    </package>
+</struts>
+
+<!-- END SNIPPET: xworkSample -->
+

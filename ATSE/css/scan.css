@@ -1,0 +1,48 @@
+.body_Broad_width {
+	background-color:#ffffff;
+	height:600px;
+	border:0;
+}
+
+.divinput {
+	margin-left:20px;
+}
+
+.form-control {
+	width:200px;
+}
+
+.scan-buttons p input {
+	width:120px;
+	height:21px;
+}
+
+#Resolution {
+	width:70px;
+}
+
+.clearfix {
+	margin-bottom:10px;
+}
+
+.option-name {
+	float:left; 
+	font-weight: bold; 
+	width: 95px;"
+}
+
+.rotate-images img {
+	width:24px;
+}
+
+.ds-dwt-container-box {
+	margin-left: 15px;
+    position: relative;
+    width: 535px;
+    height: 620px;
+}
+
+.k-window {
+	width:640px;
+	height:850px;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+    <!-- Some or all of these can be flipped to true for debugging -->
+    <constant name="struts.i18n.reload" value="false" />
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.configuration.xml.reload" value="true" />
+    <constant name="struts.custom.i18n.resources" value="globalMessages" />
+    <constant name="struts.serve.static" value="true" />
+    <constant name="struts.xslt.nocache" value="false" />
+    <constant name="struts.serve.static.browserCache" value="false" />
+    <constant name="struts.multipart.maxSize" value="52428800" />
+   
+	<include file="struts-main.xml"/>
+</struts>
+
+<!-- END SNIPPET: xworkSample -->
+
